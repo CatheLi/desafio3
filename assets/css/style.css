@@ -1,0 +1,93 @@
+/*Estilos generales para index.html de Iguanas */
+*{
+    margin:0;/*eliminando margenes predeterminados*/
+    padding:0;/*eliminando padding predeterminado*/
+    background-color: black;/*fondo negro para toda la página*/
+    color:white; /*texto en color blanco*/
+    font-family: 'Relaway',sans-serif;/*aplicando la fuente a todo el texto*/
+}
+/*quiero centrar el titulo principal y el titulo de las caracteristicas*/
+header> h1, .caracteristicas >h2,.visita {
+    text-align: center;
+}
+/*aumento el tamaño del texto*/
+header> h1 {
+    font-size: 50px;
+}
+/*dando estilo a la portada*/
+.portada {
+    width:100%; /*dandole ancho completo de la pantalla*/
+    height: 727px; /*especificación según maqueta*/
+    background-image: url(../imgs/seccion-1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.descripcion {
+    padding: 76px 0; /*espacio arriba y abajo de la sección*/
+    justify-content: center; /*centrar horizontalmente*/
+    align-items: center; /*centrar verticalmente*/
+}
+.descripcion > p {
+    max-width: 475px;/*ancho máx del párrafo*/
+    max-height: 197px;/*altura máx del párrafo*/
+    padding: 50px;/*espaciado al interior del parrafo*/
+    text-align: justify;/*alineando texto*/
+    overflow: auto;/*para que agregue una barra de desplazamiento en caso que el texto sea muy largo*/
+}
+.descripcion > img {
+    width: 399px;/*dando ancho fijo a la img*/
+    height: 237px;/*dando altura fija a la img*/
+    padding: 50px;/*espacio alrededor de la imagen*/
+}
+.descripcion, .galeria, .iconos, .icon {
+    display:flex;/*alineando los itemes hijos en fila*/
+}
+.caracteristicas{
+    width: 100%;/*dandole ancho completo de la pantalla*/
+    height: 347px;/*altura para la sección*/    
+}
+.caracteristicas > h2 {
+    font-size: 40px; /*tamaño del subtitulo*/
+    padding: 75px 0; /*espacio arriba y abajo del subtitulo*/
+}
+.iconos {
+    justify-content: center; /*centrar iconos horizontal*/
+    padding: 0; /*dejando los iconos sin espacio alrededor*/
+}
+.iconos > .icon {
+width:236px;
+height: 100%;
+}
+.icon {
+    flex-direction: column; /*alineando los items hijo en columnas*/
+    padding: 0 30px; /*dejando espacio a los lados del contenedor del icono*/
+    align-items: center;/*alineando los items hijo en el centro*/
+}
+.icon > i{
+    font-size: 37px;/*tamaño del icono*/
+    padding-bottom: 16px;
+    transition:0,3s;/*suavizando la transición ante cambios de estilo*/
+    background-color: transparent; /*fondo del ícono transparente*/
+}
+.icon > p{
+font-size: 30px;
+}
+.galeria {
+    padding: 73px 0; /*espacio arriba y abajo de la galería*/
+    justify-content: center; /*centrado horizontal*/
+}
+.galeria >img {
+    width: 316px;
+    height: 202px;
+    padding: 0 8px;
+}
+.visita {
+    width: 100%;/*ancho pantalla completa*/
+    padding: 39px 0;/*espacio arriba y abajo*/
+}
+.visita >a {
+    text-decoration: none; /*enlace limpio*/
+}
+footer, .caracteristicas,.caracteristicas >h2,.iconos, .icon, .icon >p, .visita,.visita >a {
+    background-color: #1E1A13; /*cambiando el color en los elementos que corresponde*/
+} 
